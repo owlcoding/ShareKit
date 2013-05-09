@@ -200,6 +200,10 @@ typedef enum
  */
 - (void)authDidFinish:(BOOL)success;	
 
+#pragma mark - 
+#pragma mark A result parameter (set after sharing is successful) 
+@property (nonatomic, strong) id sharingResult;
+
 @end
 
 

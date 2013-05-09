@@ -600,6 +600,7 @@ static SHKFacebook *requestingPermisSHKFacebook=nil;
 			[FBSession.activeSession close];	// unhook us
 		}
 	}else{
+        self.sharingResult = result;
 		[self sendDidFinish];
 		[FBSession.activeSession close];	// unhook us
 	}
